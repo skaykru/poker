@@ -1,0 +1,9 @@
+@import "../../styles/mixins.scss";
+
+.loading-page {
+  @include page;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
