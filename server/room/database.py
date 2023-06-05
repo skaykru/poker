@@ -15,7 +15,9 @@ def room_helper(room) -> dict:
         "id": str(room["_id"]),
         "room_name": room["room_name"],
         "blind": room["blind"],
-        "start_tokens":room["start_tokens"],
+        "start_tokens": int(room["start_tokens"]),
         "turn_player_index": room["turn_player_index"],
+        "table_cards": room["table_cards"],
+        "table_tokens": int(room["table_tokens"]),
         "players": list(room["players"])
     }
